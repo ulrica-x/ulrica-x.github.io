@@ -1,4 +1,6 @@
 .h
+
+```
 #include <iostream>
 
 class Shape {
@@ -55,9 +57,11 @@ public:
         m_decorated_shape->draw();
     }
 };
-
+```
 
 .cpp
+
+```
 #include "decorator_demo.h"
 
 int main() {
@@ -66,18 +70,22 @@ int main() {
 
     ShapeDecoratorColorBlue blue(&triangle);
     blue.draw();
-
+    
     ShapeDecoratorColorRed red(&triangle);
     red.draw();
-
+    
     ShapeDecoratorColorBlue blue1(&round);
     blue1.draw();
-
+    
     ShapeDecoratorColorRed red1(&round);
     red1.draw();
-
+    
     ShapeDecoratorColorSentimental sentimental(&blue);
     sentimental.draw();
-
+    
     return 0;
 }
+```
+
+
+
